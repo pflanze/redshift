@@ -36,3 +36,4 @@ src/gtk-redshift/Makefile
 src/redshift
 stamp-h1
 
+/PATCHES/
