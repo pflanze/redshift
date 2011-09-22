@@ -1,0 +1,15 @@
+This is a document describing how redshift works. It might be useful
+if the normal docs don't answer a question, or when you want to hack
+on the code.
+
+redshift is a program written in C that tries to figure out the user's
+location during startup, and then goes into an 'infinite loop' setting
+the display gamma according to the time of day (details?). It reacts
+to the SIGUSR1 signal by switching to day/night immediately.
+
+gtk-redshift is a small program written in Python that shows a status
+icon (what is an appindicator versus a GTK status icon?) (does it
+change the icon according to internal program state of redshift? 
+doesn't seem so) and run an instance of the "redshift" program, and
+will send it SIGUSR1 each time the user clicks the icon.
+
