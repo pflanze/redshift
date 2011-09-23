@@ -8,8 +8,10 @@ Programs
 
 redshift is a program written in C that tries to figure out the user's
 location during startup, and then goes into an 'infinite loop' setting
-the display gamma according to the time of day (details?). It reacts
-to the SIGUSR1 signal by switching to day/night immediately.
+the display gamma according to the time of day (details?). On systems
+that support signals, it reacts to the SIGUSR1 signal by switching to
+day/night immediately, and when receiving SIGINT or SIGTERM, it
+restores the screen gamma (to 6500K).
 
 gtk-redshift is a small program written in Python that shows a status
 icon (what is an appindicator versus a GTK status icon?) (does it
