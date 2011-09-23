@@ -869,6 +869,8 @@ main(int argc, char *argv[])
 		if (verbose) {
 		        /* TRANSLATORS: Append degree symbols if possible. */
 		        printf(_("Location: %f, %f\n"), lat, lon);
+		        printf(_("Temperatures: %d K at day, %d K at night\n"),
+			       temp_day, temp_night);
 		}
 	
 		/* Latitude */
