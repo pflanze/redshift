@@ -292,11 +292,14 @@ print_help(const char *program_name)
 	   DAY is temperature at daytime,
 	   NIGHT is temperature at night
 	   no-wrap */
-	printf(_("Usage: %s -l LAT:LON -t DAY:NIGHT [OPTIONS...]\n"),
-		program_name);
+	printf(_("Usage: \n"
+		 "   %s [-l LAT:LON] [-t DAY:NIGHT] [OPTIONS...]\n"
+		 " or \n"
+		 "   %s [-l PROVIDER[:POPTIONS]] [-t DAY:NIGHT] [OPTIONS...]\n"),
+	       program_name, program_name);
 	fputs("\n", stdout);
 
-	fputs("for more information, run: man redshift\n", stdout);
+	fputs("For more information, run: man redshift\n", stdout);
 }
 
 static void
