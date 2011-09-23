@@ -883,11 +883,12 @@ main(int argc, char *argv[])
 			     location_providers[i].name != NULL; i++) {
 				const location_provider_t *p =
 					&location_providers[i];
+				fprintf(stderr,
+					_("Trying location provider `%s'...\n"),
+					p->name);
 				r = provider_try_start(p, &location_state,
 						       &config_state, NULL);
 				if (r < 0) {
-					fputs(_("Trying next provider...\n"),
-					      stderr);
 					continue;
 				}
 
