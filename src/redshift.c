@@ -1250,7 +1250,7 @@ main(int argc, char *argv[])
 				}
 			}
 
-			/* Sleep for a while */
+			/* Sleep for 0.1 or 5 seconds */
 #ifndef _WIN32
 			if (short_trans) usleep(100000);
 			else usleep(5000000);
