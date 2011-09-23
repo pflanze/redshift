@@ -81,7 +81,8 @@ location automatically (from e.g. GPS) and Geoclue seemed like a good
 idea, but upon closer investigation it turned out to be horribly
 unstable. At this time GNOME had a clock applet which was present by
 default (at least in Ubuntu) that allowed the user to set a home town.
-This setting was registered in the gconf key as you correctly mention.
+This setting was registered in the gconf key
+/apps/panel/applets/clock_screen*/prefs/cities.
 The idea was to use this information until Geoclue had become more
 stable. To me, it always was a hack. Now that the Clock applet has
 gone (at least in Ubuntu) the "gnome-clock" makes little sense and
