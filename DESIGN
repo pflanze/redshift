@@ -21,6 +21,9 @@ SIGTERM, it restores the screen gamma (to 6500K).
 Redshift knows short and long transitions, short transitions being
 used at start and when reacting to signals.
 
+Once running, redshift currently doesn't check location providers
+again.
+
 
 gtk-redshift
 ------------
