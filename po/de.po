@@ -233,7 +233,7 @@ msgstr "Unbekannte Konfigurationseinstellung »%s«\n"
 #: src/redshift.c:894
 #, fuzzy, c-format
 msgid "Trying location provider `%s'...\n"
-msgstr "Unbekannter Dienst »%s«.\n"
+msgstr "Versuche Standort-Dienst »%s«.\n"
 
 #: src/redshift.c:903
 #, c-format
