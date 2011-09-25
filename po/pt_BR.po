@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: redshift\n"
 "Report-Msgid-Bugs-To: https://bugs.launchpad.net/redshift\n"
-"POT-Creation-Date: 2011-07-04 15:25+0200\n"
+"POT-Creation-Date: 2011-09-25 19:15-0400\n"
 "PO-Revision-Date: 2011-03-24 22:55+0000\n"
 "Last-Translator: Rodrigo Exterckötter Tjäder <rodrigo@tjader.com.br>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
@@ -199,127 +199,133 @@ msgstr "Tente -m %s:help' para maiores informações.\n"
 msgid "Failed to start adjustment method %s.\n"
 msgstr "Não foi possível iniciar método de ajuste %s.\n"
 
-#: src/redshift.c:648
+#: src/redshift.c:655
 msgid "Malformed gamma argument.\n"
 msgstr "Argumento gama mal-formatado.\n"
 
-#: src/redshift.c:650 src/redshift.c:749 src/redshift.c:768
+#: src/redshift.c:657 src/redshift.c:756 src/redshift.c:775
 msgid "Try `-h' for more information.\n"
 msgstr "Tente `-h' para mais informações.\n"
 
-#: src/redshift.c:691 src/redshift.c:840
+#: src/redshift.c:698 src/redshift.c:847
 #, c-format
 msgid "Unknown location provider `%s'.\n"
 msgstr "Provedor de localização `%s' desconhecido.\n"
 
 #. TRANSLATORS: This refers to the method
 #. used to adjust colors e.g VidMode
-#: src/redshift.c:722 src/redshift.c:826
+#: src/redshift.c:729 src/redshift.c:833
 #, c-format
 msgid "Unknown adjustment method `%s'.\n"
 msgstr "Método de ajuste `%s' desconhecido.\n"
 
-#: src/redshift.c:747
+#: src/redshift.c:754
 msgid "Malformed temperature argument.\n"
 msgstr "Argumento de temperatura mal-formatado.\n"
 
-#: src/redshift.c:814
+#: src/redshift.c:821
 msgid "Malformed gamma setting.\n"
 msgstr "Definição de gama mal formada.\n"
 
-#: src/redshift.c:849
+#: src/redshift.c:856
 #, c-format
 msgid "Unknown configuration setting `%s'.\n"
 msgstr "Definição de configuração `%s' desconhecida.\n"
 
-#: src/redshift.c:889
-msgid "Trying next provider...\n"
-msgstr "Tentando próximo provedor...\n"
+#: src/redshift.c:894
+#, fuzzy, c-format
+msgid "Trying location provider `%s'...\n"
+msgstr "Provedor de localização `%s' desconhecido.\n"
 
-#: src/redshift.c:895
+#: src/redshift.c:903
 #, c-format
 msgid "Using provider `%s'.\n"
 msgstr "Usando provedor `%s'.\n"
 
-#: src/redshift.c:903
+#: src/redshift.c:911
 msgid "No more location providers to try.\n"
 msgstr "Não há mais provedores de localização para contactar.\n"
 
-#: src/redshift.c:912
+#: src/redshift.c:920
 msgid "Unable to get location from provider.\n"
 msgstr "Não foi possível determinar a localização pelo provedor.\n"
 
 #. TRANSLATORS: Append degree symbols if possible.
-#: src/redshift.c:921
+#: src/redshift.c:929
 #, c-format
 msgid "Location: %f, %f\n"
 msgstr "Localização: %fº, %fº\n"
 
-#: src/redshift.c:928
+#: src/redshift.c:930
+#, c-format
+msgid "Temperatures: %d K at day, %d K at night\n"
+msgstr ""
+
+#: src/redshift.c:938
 #, c-format
 msgid "Latitude must be between %.1f and %.1f.\n"
 msgstr "Latitude deve estar entre %.1f e %.1f.\n"
 
-#: src/redshift.c:937
+#: src/redshift.c:947
 #, c-format
 msgid "Longitude must be between %.1f and %.1f.\n"
 msgstr "Longitude deve estar entre %.1f and %.1f.\n"
 
-#: src/redshift.c:945 src/redshift.c:953 src/redshift.c:963
+#: src/redshift.c:955 src/redshift.c:963 src/redshift.c:973
 #, c-format
 msgid "Temperature must be between %uK and %uK.\n"
 msgstr "A temperatura deve estar entre %uK e %uK.\n"
 
-#: src/redshift.c:972
+#: src/redshift.c:982
 #, fuzzy, c-format
 msgid "Brightness value must be between %.1f and %.1f.\n"
 msgstr "Valor gama deve estar entre %.1f and %.1f.\n"
 
-#: src/redshift.c:978
+#: src/redshift.c:988
 #, c-format
 msgid "Brightness: %.2f\n"
 msgstr ""
 
-#: src/redshift.c:986
+#: src/redshift.c:996
 #, c-format
 msgid "Gamma value must be between %.1f and %.1f.\n"
 msgstr "Valor gama deve estar entre %.1f and %.1f.\n"
 
-#: src/redshift.c:992
+#: src/redshift.c:1002
 #, c-format
 msgid "Gamma: %.3f, %.3f, %.3f\n"
 msgstr "Gama: %.3f, %.3f, %.3f\n"
 
-#: src/redshift.c:1011
+#: src/redshift.c:1021
 msgid "Trying next method...\n"
 msgstr "Tentando próximo método...\n"
 
-#: src/redshift.c:1016
+#: src/redshift.c:1026
 #, c-format
 msgid "Using method `%s'.\n"
 msgstr "Usando o método `%s'.\n"
 
-#: src/redshift.c:1023
+#: src/redshift.c:1033
 msgid "No more methods to try.\n"
 msgstr "Não há mais métodos a serem tentados.\n"
 
-#: src/redshift.c:1035 src/redshift.c:1170
+#: src/redshift.c:1045 src/redshift.c:1180
 msgid "Unable to read system time.\n"
 msgstr "Não foi possível determinar a hora do sistema.\n"
 
 #. TRANSLATORS: Append degree symbol if possible.
-#: src/redshift.c:1044
+#: src/redshift.c:1054
 #, c-format
 msgid "Solar elevation: %f\n"
 msgstr "Elevação solar: %fº\n"
 
-#: src/redshift.c:1051 src/redshift.c:1064 src/redshift.c:1237
+#: src/redshift.c:1061 src/redshift.c:1074 src/redshift.c:1247
 #, c-format
 msgid "Color temperature: %uK\n"
 msgstr "Temperatura de cor: %uK\n"
 
-#: src/redshift.c:1056 src/redshift.c:1069 src/redshift.c:1081
-#: src/redshift.c:1246
+#: src/redshift.c:1066 src/redshift.c:1079 src/redshift.c:1091
+#: src/redshift.c:1256
 msgid "Temperature adjustment failed.\n"
 msgstr "O ajuste de temperatura falhou.\n"
 
@@ -380,7 +386,7 @@ msgstr ""
 msgid "Missing value for parameter: `%s'.\n"
 msgstr "Valor ausente para o parâmetro: `%s'.\n"
 
-#: src/gamma-randr.c:295 src/gamma-vidmode.c:147 src/location-manual.c:98
+#: src/gamma-randr.c:295 src/gamma-vidmode.c:147 src/location-manual.c:101
 #, c-format
 msgid "Unknown method parameter: `%s'.\n"
 msgstr "Parâmetro de método desconhecido: `%s'.\n"
@@ -457,11 +463,12 @@ msgstr "Não foi encontrado nenhum miniaplicativo relógio.\n"
 msgid "No city selected as current city.\n"
 msgstr "Não há cidade atualmente selecionada.\n"
 
-#: src/location-gnome-clock.c:159
-msgid "Location not specified for city.\n"
+#: src/location-gnome-clock.c:160
+#, fuzzy, c-format
+msgid "Location not specified for city `%s'.\n"
 msgstr "Localização não especificada para cidade.\n"
 
-#: src/location-gnome-clock.c:189
+#: src/location-gnome-clock.c:191
 msgid "Use the location as set in the GNOME Clock applet.\n"
 msgstr ""
 "Utilize a localização conforme configurada no miniaplicativo Relógio do "
@@ -485,11 +492,17 @@ msgstr ""
 "  lat=N\t\tLatitude\n"
 "  lon=N\t\tLongitude\n"
 
-#: src/location-manual.c:84
+#: src/location-manual.c:73
+msgid ""
+"Both values are expected to be floating point numbers,\n"
+"negative values representing west / south, respectively.\n"
+msgstr ""
+
+#: src/location-manual.c:87
 msgid "Malformed argument.\n"
 msgstr "Argumento mal-formatado.\n"
 
-#: src/location-manual.c:95
+#: src/location-manual.c:98
 msgid "Too many arguments.\n"
 msgstr "Número excessivo de argumentos.\n"
 
@@ -500,6 +513,9 @@ msgstr "Trocar"
 #: src/gtk-redshift/statusicon.py:96
 msgid "Autostart"
 msgstr "Iniciar automaticamente"
+
+#~ msgid "Trying next provider...\n"
+#~ msgstr "Tentando próximo provedor...\n"
 
 #~ msgid "Unknown method `%s'.\n"
 #~ msgstr "Método desconhecido: `%s'.\n"
