@@ -464,7 +464,7 @@ msgstr "Keine Stadt ist als aktueller Standort ausgewählt.\n"
 #: src/location-gnome-clock.c:160
 #, fuzzy, c-format
 msgid "Location not specified for city `%s'.\n"
-msgstr "Ort der Stadt ist nicht festgelegt.\n"
+msgstr "Standort ist nicht festgelegt für die Stadt »%s«.\n"
 
 #: src/location-gnome-clock.c:191
 msgid "Use the location as set in the GNOME Clock applet.\n"
