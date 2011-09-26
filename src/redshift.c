@@ -283,11 +283,12 @@ calculate_temp(double elevation, int temp_day, int temp_night,
 	return temp;
 }
 
+#include "manual_help.h"
 
 static void
 print_help(const char *program_name)
 {
-#include "helptext.c"
+#include "manual.c"
 }
 
 static void
